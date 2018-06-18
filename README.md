@@ -8,4 +8,4 @@
   * [Pierre BOURGEOIS](https://github.com/Sopaa)
   * [Antoine BEAUDOIRE](https://github.com/Otokamae)
   * [Antoine DEPAIX](https://github.com/Nogao)
-  * [Sophie MÉMEINT]
+  * [Sophie MÉMEINT](https://github.com/SophieChieko)

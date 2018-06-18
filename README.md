@@ -1,6 +1,6 @@
 # Semaine Intensive Space
 
-#### Dans le but d'un projet scolaire nous devons réaliser un site qui porte l'espace
+#### Dans le but d'un projet scolaire nous devons réaliser un site qui porte l'espace.
 
 # Équipe
 

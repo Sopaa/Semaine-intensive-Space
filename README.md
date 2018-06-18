@@ -4,7 +4,7 @@
 
 # Équipe
 
-  * [Waïl SAIDINI](https://github.com/wail-s)
+  * [Waïl SAIDANI](https://github.com/wail-s)
   * [Pierre BOURGEOIS](https://github.com/Sopaa)
   * [Antoine BEAUDOIRE](https://github.com/Otokamae)
   * [Antoine DEPAIX](https://github.com/Nogao)

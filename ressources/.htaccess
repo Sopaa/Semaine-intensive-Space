@@ -1,0 +1,5 @@
+Order Allow,Deny
+<FilesMatch "index.php">
+
+Allow From All
+</FilesMatch>

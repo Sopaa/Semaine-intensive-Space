@@ -37,7 +37,10 @@ require_once "../include/connexion.php";
     </header>
 
 
-    <div class="whiteHalfCircle"></div>
+    <div class="whiteCircle-container">
+        <div class="whiteCircle"></div>
+    </div>
+    
 
     
  

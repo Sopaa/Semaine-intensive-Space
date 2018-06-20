@@ -54,12 +54,20 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
     margin-left: auto;
 }
 
-.whiteHalfCircle{
-    background-color: white;
-    height: 300px;
+.whiteCircle-container{
+    overflow: hidden;
+    height: 500px;
     width: 100vw;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+}
+
+.whiteCircle{
+    background-color: white;
+    height: 130vw;
+    width: 130vw;
+    border-radius: 50%;
     margin-top: 204px;
+    position: relative;
+    left: -15%;
+    right: 85%;
 }
 

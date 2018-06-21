@@ -40,13 +40,15 @@ require_once "../include/connexion.php";
     <div class="whiteCircle-container">
         <div class="whiteCircle"></div>
     </div>
+
+    <div class="chrono"></div>
     
 
     
  
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/carousel.js"></script>
+<script type="text/javascript" src="scripts/chrono.js"></script>
 
 </body>
 </html>

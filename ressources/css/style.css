@@ -1,0 +1,166 @@
+@font-face {
+   font-family: "Ubuntu Regular";
+   src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body{
+}
+
+a {
+  text-decoration: none;
+}
+#logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: 1000;
+}
+svg[Attributes Style] {
+    width: 100;
+    height: 100;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+
+.header-top{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.connexion-text{
+  font-family: "Ubuntu Regular";
+  margin-right: 20px;
+  position: relative;
+  color: white;
+  top: 25px;
+}
+
+.connexion-line{
+  top: 25px;
+  width: 73px;
+  height: 3px;
+  right: 15px;
+  position: relative;
+  background-color: #F4CD4A;
+}
+
+.greyLine{
+  width: 80%;
+  height: 2px;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #888888;
+}
+
+.whiteHalfCircle{
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 300px;
+  position: absolute;
+  background-color: white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.ship {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.name {
+  color: white;
+  width: 300px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px 2px white;
+  border-top: solid #979797 1px;
+  font-family: "Ubuntu regular";
+  border-bottom: solid #979797 1px;
+}
+
+.carousel {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.carousel-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 0.8s;
+}
+
+.carousel-wrap img {
+  display: block;
+}
+
+.imgShip {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  display: flex;
+  height: 240px;
+  width: 270px;
+}
+
+.carousel-btn {
+  display: flex;
+}
+
+.direction-left {
+  transform: rotate(180deg);
+    margin: auto;
+}
+.direction-right {
+    margin: auto;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+.moreInfo {
+  font-family: "Ubuntu regular";
+  letter-spacing: 2px;
+  background: #6B696F;
+  text-align: center;
+  border-radius: 3px;
+  padding: 13px 20px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #EAEAEA;
+  display: block;
+  margin: auto;
+  width: 145px;
+}
+
+.yellowLineBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.yellowLine {
+  background-color: #F4CD4A;
+  text-align: center;
+  width: 258px;
+  height: 1px;
+}
+
+.seeAll {
+  font-family: "Ubuntu regular";
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  color: #6B696F;
+}

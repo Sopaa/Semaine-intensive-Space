@@ -53,6 +53,8 @@ require_once "../include/connexion.php";
     <div class="whiteCircle-container">
     	<div class="whiteCircle"></div>
     </div>
+
+    <img src="img/ikonos.png" class="informations-image">
     
 </body>
 </html>

@@ -4,10 +4,7 @@
 }
 
 body{
-<<<<<<< HEAD
-=======
   /*position: relative;*/
->>>>>>> v0.1.2.2
 }
 
 a {
@@ -71,7 +68,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   background-color: white;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-<<<<<<< HEAD
 }
 
 .ship {
@@ -104,9 +100,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   height: 240px;
   width: 270px;
   display: flex;
-}
-
-=======
 }
 
 .ship {
@@ -185,7 +178,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   width: 20px;
   height: 20px;
 }
->>>>>>> v0.1.2.2
+
 .moreInfo {
   font-family: "Ubuntu regular";
   letter-spacing: 2px;
@@ -221,7 +214,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   font-size: 24px;
   color: #6B696F;
 }
-<<<<<<< HEAD
 
 .footer {
   width: 130px;
@@ -258,5 +250,3 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   background-color: black;
   height: 5px;
 }
-=======
->>>>>>> v0.1.2.2

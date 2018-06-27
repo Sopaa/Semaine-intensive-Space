@@ -93,6 +93,38 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   border-bottom: solid #979797 1px;
 }
 
+.imgShip {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  height: 240px;
+  width: 270px;
+  display: flex;
+}
+
+.ship {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.name {
+  color: white;
+  width: 300px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px 2px white;
+  border-top: solid #979797 1px;
+  font-family: "Ubuntu regular";
+  border-bottom: solid #979797 1px;
+}
+
 .carousel {
   margin-top: 60px;
   overflow: hidden;
@@ -146,6 +178,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   width: 20px;
   height: 20px;
 }
+
 .moreInfo {
   font-family: "Ubuntu regular";
   letter-spacing: 2px;
@@ -180,4 +213,40 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   margin-top: 30px;
   font-size: 24px;
   color: #6B696F;
+}
+
+.footer {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.greyTouch1 {
+  width: 20px;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+.greyTouch2 {
+  width: 20px;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+.greyTouch3 {
+  width: 20px;
+  height: 1px;
+  background-color: #D8D8D8;
+}
+.greyTouch1:hover {
+  background-color: black;
+  height: 5px;
+}
+.greyTouch2:hover {
+  background-color: black;
+  height: 5px;
+}
+.greyTouch3:hover {
+  background-color: black;
+  height: 5px;
 }

@@ -1,0 +1,89 @@
+@font-face {
+   font-family: "Ubuntu Regular";
+   src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body{
+  background: #28252E;
+  font-family: "Ubuntu Regular";
+}
+
+#logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: 1000;
+}
+svg[Attributes Style] {
+    width: 100;
+    height: 100;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+
+.header{
+  position: absolute;
+  z-index: 2;
+}
+
+.header-breadcrumb{
+  margin-top: 100px;
+  margin-left: 120px;
+  word-spacing: 30px;
+  color: #F0C43B;
+}
+
+.header-breadcrumb-link{
+  text-decoration: none;
+  color: #F0C43B;
+}
+
+.all{
+  position: relative;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 100px;
+  top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.one{
+  background-color: white;
+  border-radius: 5px;
+  height: 250px;
+  width: 30%;
+}
+
+.one-image{
+  position: relative;
+  z-index: 2;
+  right: 50px;
+}
+
+.one-title{
+  position: relative;
+  bottom: 180px;
+  left: 230px;
+  font-size: 30px;
+}
+
+.one-greyLine{
+  background-color: #28252E
+  height: 1px;
+  width: 121px;
+}
+
+.one-learn-more{
+  background-color: #F4CD4A;
+  color: white;
+  border-radius: 50px;
+  width: max-content;
+  padding: 5px;
+  position: relative;
+  bottom: 120px;
+  left: 230px;
+  z-index: 3;
+}

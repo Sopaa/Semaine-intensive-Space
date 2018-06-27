@@ -5,27 +5,7 @@
  * Date: 19/06/2018
  * Time: 13:51
  */
-
 require_once "../include/connexion.php";
-
-$request = 'SELECT
-`id`,
-`name`,
-`launch_date`,
-`mission_end_date`,
-`status`,
-`program`,
-`agencie`,
-`orbit`,
-`altitude`,
-`inclinaison`,
-`img`,
-`description`
-FROM
-  `Satelite`
-;';
-$stmt    = $conn->prepare( $request );
-$stmt->execute();
 ?>
 
 <!DOCTYPE html>
@@ -49,37 +29,34 @@ $stmt->execute();
 							</svg>
             </div>
             <div class="connexion">
-              <a href="../admin" class="connexion-text">Connexion</a>
+              <span class="connexion-text">Connexion</span>
               <div class="connexion-line"></div>
             </div>
         </div>
         <div class="greyLine"></div>
     </header>
-
 		<section class="ship">
-			<h1 class="name">Discover some Satelite...</h1>
+			<h1 class="name">S O Y O U Z</h1>
 		</section>
-             <a href="#" class="direction-left"><img src="img/arrow.png" class="arrow"></a>
-            <a href="#" class="direction-right"><img src="img/arrow.png" class="arrow"></a>
-		<section class="carousel">
-			<div class="carousel-wrap">
-            <?php
-			while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
-                <a class="imgShip" href="details.php?id=<?=$row['id']?>"><img src="img/<?=$row['img']?>.png" alt="<?=$row['name']?>" class="imgShipImg"></a>
-            <?php endwhile; ?>
-            </div>
+		<div class="middleShip">
+			<img src="img/soyouz.png" alt="SOYOUZ" class="imgShip">
+		</div>
+    <div class="whiteHalfCircle"></div>
+		<div class="buttonMore">
+			<a type="button" name="button" class="moreInfo">EN SAVOIR PLUS</a>
+		</div>
+		<div class="yellowLineBox">
+			<div class="yellowLine"></div>
+		</div>
+		<h2 class="seeAll">Voir tout</h2>
+		<section class="footer">
+			<div class="greyTouch1"></div>
+			<div class="greyTouch2"></div>
+			<div class="greyTouch3"></div>
 		</section>
-
-	<div class="yellowLineBox">
-		<div class="yellowLine"></div>
-	</div>
-	<a href="#"><h2 class="seeAll">Voir tout</h2></a>
-<div class="whiteHalfCircle"></div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/carousel.js"></script>
 
 </body>
 </html>
-

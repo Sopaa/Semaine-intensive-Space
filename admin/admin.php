@@ -8,7 +8,6 @@
 session_start();
 if(isset($_SESSION['logged'])) {
 	require_once "../include/connexion.php";
-	/* Select all the elements from the db table meat */
 	$request = 'SELECT
 `id`,
 `name`,
@@ -19,7 +18,9 @@ if(isset($_SESSION['logged'])) {
 `agencie`,
 `orbit`,
 `altitude`,
-`inclinaison`
+`inclinaison`,
+`img`,
+`description`
 FROM
   `Satelite`
 ;';
@@ -27,34 +28,24 @@ FROM
 	$stmt->execute();
 	?>
 
+    <a href="add.php">Want to add a Satelite?</a>
+
 	<table cellspacing="0" cellpadding="0" width="100%">
 		<tr>
 			<th>id</th>
+			<th>name</th>
 			<th>status</th>
-			<th>launch date</th>
-			<th>mission end</th>
-			<th>status</th>
-			<th>programm</th>
-			<th>agencie(s)</th>
-			<th>orbit</th>
-			<th>altitude</th>
-			<th>inclinaison</th>
 		</tr>
-		<?php while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
+		<?php
+        while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
 			<tr>
 				<td><?= $row['id'] ?></td>
-				<td><?= $row['name'] ?></a></td>
-				<td><?= $row['launch_date'] ?></td>
-				<td><?= $row['mission_end_date'] ?></td>
+				<td><a href="details.php?id=<?=$row['id']?>"><?= $row['name'] ?></a></td>
 				<td><?= $row['status'] ?></td>
-				<td><?= $row['program'] ?></td>
-				<td><?= $row['agencie'] ?></td>
-				<td><?= $row['orbit'] ?></td>
-				<td><?= $row['altitude'] ?> km</td>
-				<td><?= $row['inclinaison'] ?> °</td>
-				<td></td>
 			</tr>
-		<?php endwhile; ?>
+		<?php endwhile;
+
+?>
 	</table>
 	<?php
 }

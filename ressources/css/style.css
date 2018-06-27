@@ -4,6 +4,7 @@
 }
 
 body{
+  /*position: relative;*/
 }
 
 a {
@@ -23,7 +24,9 @@ user agent stylesheet
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
     overflow: hidden;
 }
-
+.buttonMore {
+  color: #FFFFFF;
+}
 .header-top{
   justify-content: space-between;
   align-items: center;
@@ -97,6 +100,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 
 .carousel-wrap {
   display: flex;
+
   flex-wrap: nowrap;
   transition: all 0.8s;
 }
@@ -108,21 +112,34 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 .imgShip {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 70px;
+  margin-top: -50px;
   display: flex;
-  height: 240px;
-  width: 270px;
+  height: auto;
+  width: auto;
+  align-items: center;
 }
 
+.imgShip {
+  height: auto;
+  width: auto;
+
+}
 .carousel-btn {
-  display: flex;
+
 }
 
 .direction-left {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
   transform: rotate(180deg);
-    margin: auto;
+  margin: auto;
 }
 .direction-right {
+  position: absolute;
+
+  bottom: 50%;
+  right: 10%;
     margin: auto;
 }
 .arrow {

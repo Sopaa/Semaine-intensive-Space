@@ -5,6 +5,7 @@
  * Date: 19/06/2018
  * Time: 13:51
  */
+
 require_once "../include/connexion.php";
 
 $request = 'SELECT
@@ -81,3 +82,4 @@ $stmt->execute();
 
 </body>
 </html>
+

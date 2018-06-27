@@ -28,6 +28,7 @@ FROM
 	$stmt->execute();
 	?>
 
+
     <a href="add.php">Want to add a Satelite?</a>
 
 	<table cellspacing="0" cellpadding="0" width="100%">

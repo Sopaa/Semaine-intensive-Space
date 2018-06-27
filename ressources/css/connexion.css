@@ -1,0 +1,75 @@
+@font-face {
+   font-family: "Ubuntu Regular";
+   src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body{
+  background: #28252E;
+  font-family: "Ubuntu Regular";
+  color: white;
+}
+
+#logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: 1000;
+}
+svg[Attributes Style] {
+    width: 100;
+    height: 100;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+
+.header{
+  position: absolute;
+  z-index: 2;
+  left: 4%;
+}
+
+.header-breadcrumb{
+  margin-top: 100px;
+  margin-left: 120px;
+  word-spacing: 30px;
+  color: #F0C43B;
+}
+
+.header-breadcrumb-link{
+  text-decoration: none;
+  color: #F0C43B;
+}
+
+.title{
+  color: #eac549;
+  font-size: 30px;
+}
+
+.form-container{
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+
+.form-mail, .form-password{
+  background: none;
+  color: white
+  border: none;
+  font-size: 20px;
+  margin-top: 70px;
+  width: 50%;
+}
+
+.form-submit{
+  margin-top: 40px;
+  width: 50%;
+  background-color: #979797;
+  border: 1px solid #979797;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}

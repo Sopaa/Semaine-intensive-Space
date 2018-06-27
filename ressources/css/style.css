@@ -4,8 +4,15 @@
 }
 
 body{
+<<<<<<< HEAD
+=======
+  /*position: relative;*/
+>>>>>>> v0.1.2.2
 }
 
+a {
+  text-decoration: none;
+}
 #logo {
     position: absolute;
     left: 3px;
@@ -20,7 +27,9 @@ user agent stylesheet
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
     overflow: hidden;
 }
-
+.buttonMore {
+  color: #FFFFFF;
+}
 .header-top{
   justify-content: space-between;
   align-items: center;
@@ -62,6 +71,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   background-color: white;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+<<<<<<< HEAD
 }
 
 .ship {
@@ -96,6 +106,86 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   display: flex;
 }
 
+=======
+}
+
+.ship {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.name {
+  color: white;
+  width: 300px;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  text-shadow: 2px 2px 2px white;
+  border-top: solid #979797 1px;
+  font-family: "Ubuntu regular";
+  border-bottom: solid #979797 1px;
+}
+
+.carousel {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.carousel-wrap {
+  display: flex;
+
+  flex-wrap: nowrap;
+  transition: all 0.8s;
+}
+
+.carousel-wrap img {
+  display: block;
+}
+
+.imgShip {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -50px;
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+}
+
+.imgShip {
+  height: auto;
+  width: auto;
+
+}
+.carousel-btn {
+
+}
+
+.direction-left {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  transform: rotate(180deg);
+  margin: auto;
+}
+.direction-right {
+  position: absolute;
+
+  bottom: 50%;
+  right: 10%;
+    margin: auto;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+>>>>>>> v0.1.2.2
 .moreInfo {
   font-family: "Ubuntu regular";
   letter-spacing: 2px;
@@ -131,6 +221,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   font-size: 24px;
   color: #6B696F;
 }
+<<<<<<< HEAD
 
 .footer {
   width: 130px;
@@ -167,3 +258,5 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   background-color: black;
   height: 5px;
 }
+=======
+>>>>>>> v0.1.2.2

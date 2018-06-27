@@ -5,7 +5,6 @@
  * Date: 19/06/2018
  * Time: 14:05
  */
-
 session_start();
 require_once "../include/connexion.php";
 if (true) {
@@ -48,4 +47,3 @@ WHERE
                 <input type="submit" name="submit" value="Se Connecter">
             </div>
         </form>
-

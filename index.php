@@ -11,5 +11,3 @@ header( "Location: ressources/index.php");
 ?>
 
 <!-- ON CODE PAS ICI -->
-
-

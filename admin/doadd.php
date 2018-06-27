@@ -16,7 +16,12 @@ if(isset($_SESSION['logged'])){
 VALUES 
 (:name, :launch_date, :mission_end_date, :status, :program, :agencie, :orbit, :altitude, :inclinaison, :img, :description) 
 ;";
+	if (file_exists($_FILES['img']['name'])) {
 
+	}else{
+	$uploadfile = '../ressources/img/'.$_FILES['img']['name'];
+	move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile);
+	}
 	$stmt = $conn->prepare($request);
 	$stmt->bindValue(':name', htmlentities($_POST['name']));
 	$stmt->bindValue(':launch_date', htmlentities($_POST['launch_date']));
@@ -27,7 +32,7 @@ VALUES
 	$stmt->bindValue(':orbit', htmlentities($_POST['orbit']));
 	$stmt->bindValue(':altitude', htmlentities($_POST['altitude']));
 	$stmt->bindValue(':inclinaison', htmlentities($_POST['inclinaison']));
-	$stmt->bindValue(':img', htmlentities($_POST['img']));
+	$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
 	$stmt->bindValue(':description', htmlentities($_POST['description']));
 	$stmt->execute();
 	/* Back to index page */

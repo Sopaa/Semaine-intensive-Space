@@ -36,18 +36,18 @@ WHERE
 
 	<p><?=$row['id']?> -- <?=$row['name']?></p>
 	<form action="doedit.php" method="post" enctype="multipart/form-data">
-		<input type="hidden" value="<?=$_GET['id']?>" name="id">
-		<input  value="<?=$row['name']?>" type="text" name="name" >
+        <input type="hidden" value="<?=$_GET['id']?>" name="id">
+        <label for="">Nom:</label><input  value="<?=$row['name']?>" type="text" name="name" >
 		<label for="">Jour de lancement : </label><input  value="<?=$row['launch_date']?>" type="date" name="launch_date" >
 		<label for="">Jour de fin de mission : </label><input value="<?=$row['mission_end_date']?>" type="date" name="mission_end_date"  >
-		<input  value="<?=$row['status']?>" type="text" name="status" >
-		<input  value="<?=$row['program']?>" type="text" name="program" >
-		<input  value="<?=$row['agencie']?>" type="text" name="agencie" >
-		<input  value="<?=$row['orbit']?>" type="text" name="orbit" >
-		<input  value="<?=$row['altitude']?>" type="number" name="altitude" >
-		<input  value="<?=$row['inclinaison']?>" type="text" name="inclinaison" >
-		<input  value="<?=$row['img']?>" type="text" name="img" >
-		<input  value="<?=$row['description']?>" type="text" name="description" >
+        <label for="">Statut : </label><input  value="<?=$row['status']?>" type="text" name="status" >
+        <label for="">Programme : </label><input  value="<?=$row['program']?>" type="text" name="program" >
+        <label for="">Agence : </label><input  value="<?=$row['agencie']?>" type="text" name="agencie" >
+        <label for="">Type d'orbite : </label><input  value="<?=$row['orbit']?>" type="text" name="orbit" >
+        <label for="">Altitude : </label><input  value="<?=$row['altitude']?>" type="number" name="altitude" min="0" >
+        <label for="">Inclinaison : </label><input  value="<?=$row['inclinaison']?>" type="text" name="inclinaison" >
+        <label for="">Image : </label><input  value="<?=$row['img']?>" type="file" accept="image/*" name="img" >
+        <label for="">Descritpion : </label><input  value="<?=$row['description']?>" type="text" name="description" >
 		<input class="submitInput" type="submit" value="modifier">
 	</form>
 

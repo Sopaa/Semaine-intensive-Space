@@ -28,6 +28,10 @@ SET
 WHERE 
 	id = :id
 ;";
+
+	$uploadfile = '../ressources/img/'.$_FILES['img']['name'];
+	move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile);
+
 	$stmt = $conn->prepare($request);
 	$stmt->bindValue(':name', htmlentities($_POST['name']));
 	$stmt->bindValue(':launch_date', htmlentities($_POST['launch_date']));
@@ -38,7 +42,7 @@ WHERE
 	$stmt->bindValue(':orbit', htmlentities($_POST['orbit']));
 	$stmt->bindValue(':altitude', htmlentities($_POST['altitude']));
 	$stmt->bindValue(':inclinaison', htmlentities($_POST['inclinaison']));
-	$stmt->bindValue(':img', htmlentities($_POST['img']));
+	$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
 	$stmt->bindValue(':description', htmlentities($_POST['description']));
 	$stmt->bindValue(':id', $_POST['id']);
 	$stmt->execute();

@@ -30,9 +30,9 @@ if(isset($_SESSION['logged'])){
 					<input  placeholder="Programme" type="text" name="program" >
 					<input  placeholder="agence(s)" type="text" name="agencie" >
 					<input  placeholder="orbite" type="text" name="orbit" >
-					<input  placeholder="atlitude" type="number" name="altitude" >
+					<input  placeholder="atlitude" type="number" name="altitude" min="0" >
 					<input  placeholder="inclinaison" type="text" name="inclinaison" >
-					<input  placeholder="img" type="text" name="img" >
+					<input  placeholder="img" type="file" name="img" accept="image/*" >
 					<input  placeholder="description" name="description" >
 				<input class="submitInput" type="submit" value="Ajouter">
 			</form>

@@ -14,7 +14,9 @@ require_once "../include/connexion.php";
 $request = "DELETE FROM 
 `Satelite` 
 WHERE 
-id = :id;";
+id = :id";
+	
+
 $stmt = $conn->prepare($request);
 $stmt->bindValue(':id', $_GET['id']);
 $stmt->execute();

@@ -72,7 +72,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 }
 
 .one-greyLine{
-  background-color: #28252E
+  background-color: #28252E;
   height: 1px;
   width: 121px;
 }

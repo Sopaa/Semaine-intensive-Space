@@ -98,7 +98,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 .imgShip {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 70px;
   height: 240px;
   width: 270px;
   display: flex;
@@ -146,7 +145,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 .imgShip {
   margin-right: auto;
   margin-left: auto;
-  margin-top: -50px;
   display: flex;
   height: auto;
   width: auto;

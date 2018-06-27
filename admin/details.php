@@ -56,7 +56,7 @@ WHERE
 	<p><label for="">Altitude : </label><?= $row['altitude'] ?> km</p>
 	<p><label for="">Inclinaison : </label><?= $row['inclinaison'] ?></p>
 	<p><label for="">descritpion : </label><?= $row['description'] ?></p>
-	<p><label for="">image : </label></p> <img src="../ressources/img/<?= $row['img'] ?>.png" alt="<?= $row['name'] ?>">
+	<p><label for="">image : </label></p> <img src="../ressources/img/<?= $row['img'] ?>" alt="<?= $row['name'] ?>">
 
 
 	<h3><a href="edit.php?id=<?= $row['id'] ?>">Modifier</a></h3>

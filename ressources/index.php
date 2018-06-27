@@ -65,7 +65,7 @@ $stmt->execute();
 			<div class="carousel-wrap">
             <?php
 			while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
-                <a class="imgShip" href="details.php?id=<?=$row['id']?>"><img src="img/<?=$row['img']?>.png" alt="<?=$row['name']?>" class="imgShipImg"></a>
+                <a class="imgShip" href="details.php?id=<?=$row['id']?>"><img src="img/<?=$row['img']?>" alt="<?=$row['name']?>" class="imgShipImg"></a>
             <?php endwhile; ?>
             </div>
 		</section>

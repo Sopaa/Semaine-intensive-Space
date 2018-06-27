@@ -34,6 +34,11 @@ if(isset($_SESSION['logged'])){
 					<input  placeholder="inclinaison" type="text" name="inclinaison" >
 					<input  placeholder="img" type="file" name="img" accept="image/*" >
 					<input  placeholder="description" name="description" >
+					<input  placeholder="apoaxis" name="apoaxis" >
+					<input  placeholder="periaxis" name="periaxis" >
+					<input  placeholder="duration" name="duration" >
+					<input  placeholder="surname" name="surname" >
+					<input  placeholder="launch_site" name="launch_site" >
 				<input class="submitInput" type="submit" value="Ajouter">
 			</form>
 	</body>

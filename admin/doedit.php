@@ -24,7 +24,12 @@ SET
   `altitude` = :altitude,
   `inclinaison` = :inclinaison,
   `img` = :img,
-  `description` = :description
+  `description` = :description,
+  `apoaxis` = :apoaxis,
+  `periaxis` = :periaxis,
+  `duration` = :duration,
+  `surname` = :surname,
+  `launch_site` = :launch_site
 WHERE 
 	id = :id
 ;";
@@ -44,6 +49,11 @@ WHERE
 	$stmt->bindValue(':inclinaison', htmlentities($_POST['inclinaison']));
 	$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
 	$stmt->bindValue(':description', htmlentities($_POST['description']));
+	$stmt->bindValue(':apoaxis', htmlentities($_POST['apoaxis']));
+	$stmt->bindValue(':periaxis', htmlentities($_POST['periaxis']));
+	$stmt->bindValue(':duration', htmlentities($_POST['duration']));
+	$stmt->bindValue(':surname', htmlentities($_POST['surname']));
+	$stmt->bindValue(':launch_site', htmlentities($_POST['launch_site']));
 	$stmt->bindValue(':id', $_POST['id']);
 	$stmt->execute();
 	header('Location: details.php?id='.$_POST['id']);
@@ -52,4 +62,6 @@ WHERE
 
 
 
-else { echo "Votre session a expirée.";}
+else {
+	echo "Votre session a expirée.";
+}

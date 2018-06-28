@@ -19,7 +19,7 @@ if(isset($_SESSION['logged'])){
 
 		<a href="admin.php">retour a l'index </a>
 
-			<h1> Ajouter un Satelite </h1>
+			<h1> Ajouter un Satellite </h1>
 
 			<form action="doadd.php" method="post" enctype="multipart/form-data">
 					<input  placeholder="Nom" type="text" name="name" >

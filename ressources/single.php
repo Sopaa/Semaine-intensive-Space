@@ -34,7 +34,6 @@ $stmt->bindValue( ':id', $_GET['id'] );
 $stmt->execute();
 $row = $stmt->fetch( PDO::FETCH_ASSOC );
 ?>
-?>
 
 <!DOCTYPE html>
 <html>
@@ -68,7 +67,7 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
     		<p class="informations-paragraph"><span class="informations-bold">Statut:</span> <?=$row['status']?></p>
     		<p class="informations-paragraph"><span class="informations-bold">Autres noms:</span> <?=$row['surname']?></p>
     		<p class="informations-paragraph"><span class="informations-bold">Lancement:</span> <?=$row['launch_date']?></p>
-    		<p class="informations-paragraph"><span class="informations-bold">Durée:</span> <?=$row['duration']?></p>
+    		<p class="informations-paragraph"><span class="informations-bold">Durée:</span> <?=$row['duration']?> jours</p>
     		<p class="informations-paragraph"><span class="informations-bold">Fin de mission:</span> <?=$row['mission_end_date']?></p>
     		<p class="informations-paragraph"><span class="informations-bold">Site:</span> <?=$row['launch_site']?></p>
     		<p class="informations-paragraph"><span class="informations-bold">Orbite:</span> <?=$row['orbit']?></p>

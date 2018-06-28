@@ -10,10 +10,11 @@
 session_start();
 if(isset($_SESSION['logged'])) {
 	require_once "../include/connexion.php";
-
+if(!empty($_FILES['img']['name'])) {
 	$request = "UPDATE 
   `Satelite` 
 SET 
+  `id` = :id,
   `name` = :name, 
   `launch_date` = :launch_date,
   `mission_end_date` = :mission_end_date, 
@@ -33,6 +34,30 @@ SET
 WHERE 
 	id = :id
 ;";
+} else {
+	$request = "UPDATE 
+  `Satelite` 
+SET 
+  `id` = :id,
+  `name` = :name, 
+  `launch_date` = :launch_date,
+  `mission_end_date` = :mission_end_date, 
+  `status` = :status, 
+  `program` = :program, 
+  `agencie` = :agencie, 
+  `orbit` = :orbit, 
+  `altitude` = :altitude,
+  `inclinaison` = :inclinaison,
+  `description` = :description,
+  `apoaxis` = :apoaxis,
+  `periaxis` = :periaxis,
+  `duration` = :duration,
+  `surname` = :surname,
+  `launch_site` = :launch_site
+WHERE 
+	id = :id
+;";
+}
 
 	$uploadfile = '../ressources/img/'.$_FILES['img']['name'];
 	move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile);
@@ -47,7 +72,9 @@ WHERE
 	$stmt->bindValue(':orbit', htmlentities($_POST['orbit']));
 	$stmt->bindValue(':altitude', htmlentities($_POST['altitude']));
 	$stmt->bindValue(':inclinaison', htmlentities($_POST['inclinaison']));
-	$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
+	if(!empty($_FILES['img']['name'])) {
+		$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
+	}
 	$stmt->bindValue(':description', htmlentities($_POST['description']));
 	$stmt->bindValue(':apoaxis', htmlentities($_POST['apoaxis']));
 	$stmt->bindValue(':periaxis', htmlentities($_POST['periaxis']));
@@ -57,7 +84,6 @@ WHERE
 	$stmt->bindValue(':id', $_POST['id']);
 	$stmt->execute();
 	header('Location: details.php?id='.$_POST['id']);
-
 }
 
 

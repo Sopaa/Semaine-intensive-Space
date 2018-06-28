@@ -88,3 +88,8 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   left: 230px;
   z-index: 3;
 }
+
+.all_more {
+ color: #FFFFFF;
+  text-decoration: none;
+}

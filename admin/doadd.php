@@ -13,7 +13,6 @@ if(isset($_SESSION['logged'])){
 	$request = "INSERT INTO
 	`Satelite` 
 	(
-		`id`,
 		`name`,
 		`launch_date`,
 		`mission_end_date`,

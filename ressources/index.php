@@ -73,7 +73,7 @@ $stmt->execute();
 	<div class="yellowLineBox">
 		<div class="yellowLine"></div>
 	</div>
-	<a href="#"><h2 class="seeAll">Voir tout</h2></a>
+	<a href="all.php"><h2 class="seeAll">Voir tout</h2></a>
 <div class="whiteHalfCircle"></div>
 
 

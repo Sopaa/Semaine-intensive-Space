@@ -21,7 +21,6 @@ if(isset($_SESSION['logged'])){
 
 			<h1> Ajouter un Satelite </h1>
 
-			<!-- On remplit notre form avec les valeurs des éléments de la db puis on les renvoit en POST -->
 			<form action="doadd.php" method="post" enctype="multipart/form-data">
 					<input  placeholder="Nom" type="text" name="name" >
 					<label for="">Jour de lancement : </label><input  placeholder="Jour de lancement" type="date" name="launch_date" >

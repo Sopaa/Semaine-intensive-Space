@@ -36,11 +36,14 @@ require_once "../include/connexion.php";
 	<section class="form-container">
 		<div class="title">CONNEXION</div>
 		<form>
-			<p><input type="text" name="mail" value="Adresse mail" class="form-mail"></p>
-			<p><input type="text" name="password" value="Mot de passe" class="form-password"></p>
+			<p><input type="text" name="mail" placeholder="Adresse mail" class="form-mail"></p>
+			<p><input type="text" name="password" placeholder="Mot de passe" class="form-password"></p>
 			<p><input type="submit" name="submit" value="Se connecter" class="form-submit"></p>	
 		</form>
-		<a href="#">Créer un compte .</a><a href="#">Mot de passe oublié</a>
+		<div class="link-container">
+			<a href="#" class="bottom-link">Créer un compte . </a><a href="#" class="bottom-link">Mot de passe oublié</a>
+		</div>
+		
 	</section>
 
 	

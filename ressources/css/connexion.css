@@ -57,10 +57,16 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   background: none;
   color: white
   border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 20px;
+  border-top:none;
+  border-right:none;
+  border-left:none;
   margin-top: 70px;
   width: 50%;
+  box-sizing: border-box;
 }
+
 
 .form-submit{
   margin-top: 40px;
@@ -72,4 +78,14 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 5px;
+}
+
+.link-container{
+  margin-right: 30%;
+  margin-top: 30px;
+}
+
+.bottom-link{
+  color: white;
+  text-decoration: none;
 }

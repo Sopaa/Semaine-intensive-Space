@@ -34,6 +34,7 @@ $stmt->execute();
 	<title>6ROCKET9</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
 </head>
 <body background="img/bgGalaxy.png">
     <header class="header">
@@ -48,10 +49,19 @@ $stmt->execute();
 						  	</g>
 							</svg>
             </div>
-            <div class="connexion">
-              <a href="../admin" class="connexion-text">Connexion</a>
-              <div class="connexion-line"></div>
+            <section class="burgerMenu">
+            <nav id="topMenu" class="menu">
+                <ul class="menu-list">
+                    <li class="menu-bold" content="SATELLITES"><a href="../admin">SATELLITES</a></li><br/>
+                    <li class="menu-bold" content="ARTICLES"><a href="../#">ARTICLES</a></li><br/>
+                    <li class="menu-bold" content="DONS"><a href="../#">DONS</a></li><br />
+                    <li class="menu-bold" content="CONNEXION"><a href="../#">CONNEXION</a></li>
+                </ul>
+            </nav>
+            <div id="burgerMenu">
+                <span></span>
             </div>
+            </section>
         </div>
         <div class="greyLine"></div>
     </header>
@@ -79,7 +89,7 @@ $stmt->execute();
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/carousel.js"></script>
-
+    <script type="text/javascript" src="scripts/burgermenu.js"></script>
 </body>
 </html>
 

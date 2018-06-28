@@ -81,7 +81,6 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 }
 
 .link-container{
-  margin-right: 30%;
   margin-top: 30px;
 }
 

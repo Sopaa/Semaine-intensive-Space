@@ -59,19 +59,9 @@ $stmt->execute();
     			<p><?=$row['name']?></p>
     			<div class="one-greyLine"></div>
     		</div>
-    		<div class="one-learn-more"><a  href="single.php?id=<?=$row['id']?>" class="all_more">En savoir plus</a></div>
+    		<div class="one-learn-more"><a class="all_more" href="single.php?id=<?=$row['id']?>">En savoir plus</a></div>
     	</div>
 	    <?php endwhile;
 
 	    ?>
     </div>
-
-
-    <div class="arrowCircle" id="myBtn">
-        <img src="img/up-arrow.svg" class="arrow">
-    </div>
-
-    
-    <script type="text/javascript" src="scripts/scrolltotop.js"></script>
-
-</body>

@@ -82,18 +82,6 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
     </div>
 
     <img src="img/ikonos.png" class="informations-image">
-
-    <div class="return-container">
-        <a href="" class="return">Retour</a>
-        <div class="arrowCircleLeft">
-            <img src="img/left-arrow.svg" class="arrow">
-        </div>
-    </div>
-
-
-
-    
-    
     
 </body>
 </html>

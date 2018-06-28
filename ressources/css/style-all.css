@@ -62,12 +62,13 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   position: relative;
   z-index: 2;
   right: 50px;
+  max-height: 250px;
 }
 
 .one-title{
   position: relative;
   bottom: 180px;
-  left: 230px;
+  left: 200px;
   font-size: 30px;
 }
 
@@ -85,11 +86,36 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   padding: 5px;
   position: relative;
   bottom: 120px;
-  left: 230px;
+  left: 210px;
   z-index: 3;
 }
 
 .all_more {
  color: #FFFFFF;
   text-decoration: none;
+}
+
+.arrowCircle{
+  position: fixed;
+  left: 93vw;
+  top: 88vh;
+  background-color: #f4cd4a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowCircle:hover{
+  cursor: pointer;
+}
+
+.arrow{
+  height: 40px;
+}
+
+#myBtn{
+  display: none;
 }

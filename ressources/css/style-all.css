@@ -94,3 +94,28 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
  color: #FFFFFF;
   text-decoration: none;
 }
+
+.arrowCircle{
+  position: fixed;
+  left: 93vw;
+  top: 88vh;
+  background-color: #f4cd4a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowCircle:hover{
+  cursor: pointer;
+}
+
+.arrow{
+  height: 40px;
+}
+
+#myBtn{
+  display: none;
+}

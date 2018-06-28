@@ -65,3 +65,13 @@ $stmt->execute();
 
 	    ?>
     </div>
+
+
+    <div class="arrowCircle" id="myBtn">
+        <img src="img/up-arrow.svg" class="arrow">
+    </div>
+
+    
+    <script type="text/javascript" src="scripts/scrolltotop.js"></script>
+
+</body>

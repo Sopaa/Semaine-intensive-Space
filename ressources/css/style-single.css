@@ -104,8 +104,8 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 .descriptive-container{
   position: absolute;
   top: 200px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
   margin-bottom: 100px;
 }
 
@@ -126,4 +126,60 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 
 .descriptive-orange{
   color: #f4cd4a;
+}
+
+.arrowCircle{
+  position: fixed;
+  left: 93vw;
+  top: 88vh;
+  background-color: #f4cd4a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowCircle:hover{
+  cursor: pointer;
+}
+
+.arrow{
+  height: 40px;
+}
+
+#myBtn{
+  display: ;
+}
+
+.return-container{
+  display: flex;
+}
+
+.return{
+  position: absolute;
+  z-index: 7;
+  left: 88vw;
+  top: 91vh;
+  text-decoration: none;
+  color: black;
+}
+
+.arrowCircleLeft{
+  position: absolute;
+  left: 93vw;
+  top: 88vh;
+  z-index: 6;
+  background-color: #f4cd4a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowCircleLeft:hover{
+  cursor: pointer;
 }

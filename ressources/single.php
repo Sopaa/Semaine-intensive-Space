@@ -38,7 +38,7 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><?=$row['name']?></title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style-single.css">
 </head>
@@ -56,7 +56,7 @@ $row = $stmt->fetch( PDO::FETCH_ASSOC );
 							</svg>
             </div>
         </div>
-        <div class="header-breadcrumb"><a href="#" class="header-breadcrumb-link">Accueil</a> > <a href="#" class="header-breadcrumb-link">Satellites</a>  >  <a href="#" class="header-breadcrumb-link">Tous les satellites</a>  >  <a href="#" class="header-breadcrumb-link"><?=$row['name']?></a></div>
+        <div class="header-breadcrumb"><a href="index.php" class="header-breadcrumb-link">Accueil</a> >  <a href="all.php" class="header-breadcrumb-link">Tous les satellites</a>  >  <a href="#" class="header-breadcrumb-link"><?=$row['name']?></a></div>
     </header>
 
 

@@ -5,15 +5,45 @@
  * Date: 19/06/2018
  * Time: 13:51
  */
+session_start();
 require_once "../include/connexion.php";
+if (true) {
+	if (!empty($_POST['username']) || !empty($_POST['password'])) {
+		$username = htmlentities($_POST['username']);
+		$password = htmlentities($_POST['password']);
+//Check if input is not empty
+		if (!empty($username) && !empty($password)) {
+//Get mail and password from db
+			$requete = "SELECT
+`username`,
+`password`
+FROM
+`admin`
+WHERE
+`username` = :username AND
+`password` = :password
+;";
+			$stmt = $conn->prepare($requete);
+			$stmt->bindParam(':username', $username);
+			$stmt->bindParam(':password', $password);
+			$stmt->execute();
+			$user = $stmt->fetch();
+			$_SESSION['logged'] = 'true';
+			if ($user) {
+				header('location: admin.php');
+			}
+		}
+	}
+}
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/connexion.css">
+	<link rel="stylesheet" type="text/css" href="../ressources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../ressources/css/connexion.css">
 </head>
 <body>
 	<header class="header">
@@ -35,14 +65,13 @@ require_once "../include/connexion.php";
 
 	<section class="form-container">
 		<div class="title">CONNEXION</div>
-		<form>
-			<p><input type="text" name="mail" placeholder="Adresse mail" class="form-mail"></p>
-			<p><input type="text" name="password" placeholder="Nom d'utilisateur" class="form-password"></p>
-			<p><input type="text" name="password" placeholder="Mot de passe" class="form-password"></p>
+		<form method="post">
+			<p><input type="text" name="username" placeholder="Adresse mail" class="form-mail"></p>
+			<p><input type="password" name="password" placeholder="Mot de passe" class="form-password"></p>
 			<p><input type="submit" name="submit" value="Se connecter" class="form-submit"></p>	
 		</form>
 		<div class="link-container">
-			<a href="#" class="bottom-link">Retour à la connexion</a>
+			<a href="#" class="bottom-link">Mot de passe oublié</a>
 		</div>
 		
 	</section>

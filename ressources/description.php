@@ -45,12 +45,3 @@ require_once "../include/connexion.php";
 		<p class="descriptive-paragraph">Les Etats-Unis mettent 4 mois à réagir en envoyant leur propre satellite, <span class="descriptive-orange">Explorer 1</span>, le premier février 1958, depuis la fameuse base de Cap Canaveral.</p>
 		<p class="descriptive-paragraph">Dans la course à l'espace désormais lancée, Nikita Khrouchtchev, alors premier secrétaire du Parti communiste russe, garde sa longueur d'avance sur Harry S.</p>
     </section>
-
-    <div class="arrowCircle" id="myBtn">
-    	<img src="img/up-arrow.svg" class="arrow">
-    </div>
-
-	
-    <script type="text/javascript" src="scripts/scrolltotop.js"></script>
-
-</body>

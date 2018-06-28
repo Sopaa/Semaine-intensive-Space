@@ -59,7 +59,7 @@ $stmt->execute();
     			<p><?=$row['name']?></p>
     			<div class="one-greyLine"></div>
     		</div>
-    		<div class="one-learn-more"><a class="all_more" href="single.php?id=<?=$row['id']?>">En savoir plus</a></div>
+    		<div class="one-learn-more"><a  href="single.php?id=<?=$row['id']?>" class="all_more">En savoir plus</a></div>
     	</div>
 	    <?php endwhile;
 

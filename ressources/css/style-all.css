@@ -62,12 +62,13 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   position: relative;
   z-index: 2;
   right: 50px;
+  max-height: 250px;
 }
 
 .one-title{
   position: relative;
   bottom: 180px;
-  left: 230px;
+  left: 200px;
   font-size: 30px;
 }
 
@@ -85,7 +86,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   padding: 5px;
   position: relative;
   bottom: 120px;
-  left: 230px;
+  left: 210px;
   z-index: 3;
 }
 

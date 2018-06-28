@@ -34,6 +34,7 @@ $stmt->execute();
 	<title>6ROCKET9</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
 </head>
 <body background="img/bgGalaxy.png">
     <header class="header">
@@ -48,10 +49,19 @@ $stmt->execute();
 						  	</g>
 							</svg>
             </div>
-            <div class="connexion">
-              <a href="../admin" class="connexion-text">Connexion</a>
-              <div class="connexion-line"></div>
+            <section class="burgerMenu">
+            <nav id="topMenu" class="menu">
+                <ul class="menu-list">
+                    <li class="menu-bold" content="SATELLITES"><a href="../admin">SATELLITES</a></li><br/>
+                    <li class="menu-bold" content="ARTICLES"><a href="../#">ARTICLES</a></li><br/>
+                    <li class="menu-bold" content="DONS"><a href="../#">DONS</a></li><br />
+                    <li class="menu-bold" content="CONNEXION"><a href="../#">CONNEXION</a></li>
+                </ul>
+            </nav>
+            <div id="burgerMenu">
+                <span></span>
             </div>
+            </section>
         </div>
         <div class="greyLine"></div>
     </header>
@@ -65,7 +75,7 @@ $stmt->execute();
 			<div class="carousel-wrap">
             <?php
 			while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
-                <a class="imgShip" href="details.php?id=<?=$row['id']?>"><img src="img/<?=$row['img']?>.png" alt="<?=$row['name']?>" class="imgShipImg"></a>
+                <a class="imgShip" href="single.php?id=<?=$row['id']?>"><img src="img/<?=$row['img']?>" alt="<?=$row['name']?>" class="imgShipImg"></a>
             <?php endwhile; ?>
             </div>
 		</section>
@@ -73,13 +83,13 @@ $stmt->execute();
 	<div class="yellowLineBox">
 		<div class="yellowLine"></div>
 	</div>
-	<a href="#"><h2 class="seeAll">Voir tout</h2></a>
+	<a href="all.php"><h2 class="seeAll">Voir tout</h2></a>
 <div class="whiteHalfCircle"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/carousel.js"></script>
-
+    <script type="text/javascript" src="scripts/burgermenu.js"></script>
 </body>
 </html>
 

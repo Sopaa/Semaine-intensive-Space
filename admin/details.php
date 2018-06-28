@@ -22,7 +22,12 @@ if(isset($_SESSION['logged'])) {
 `altitude`,
 `inclinaison`,
 `img`,
-`description`
+`description`,
+`apoaxis`,
+`periaxis`,
+`duration`,
+`surname`,
+`launch_site`
 FROM
   `Satelite`
 WHERE
@@ -54,9 +59,14 @@ WHERE
 	<p><label for="">Agence(s) : </label><?= $row['agencie'] ?></p>
 	<p><label for="">Type d'orbite : </label><?= $row['orbit'] ?></p>
 	<p><label for="">Altitude : </label><?= $row['altitude'] ?> km</p>
-	<p><label for="">Inclinaison : </label><?= $row['inclinaison'] ?></p>
-	<p><label for="">descritpion : </label><?= $row['description'] ?></p>
-	<p><label for="">image : </label></p> <img src="../ressources/img/<?= $row['img'] ?>.png" alt="<?= $row['name'] ?>">
+	<p><label for="">Inclinaison : </label><?= $row['inclinaison'] ?>°</p>
+	<p><label for="">Descritpion : </label><?= $row['description'] ?></p>
+	<p><label for="">Apogée : </label><?= $row['apoaxis'] ?> km</p>
+	<p><label for="">Pétigée : </label><?= $row['periaxis'] ?> km</p>
+	<p><label for="">durée de la mission : </label><?= $row['duration'] ?> jours</p>
+	<p><label for="">Autre(s) nom(s) : </label><?= $row['surname'] ?></p>
+	<p><label for="">Site de lancement : </label><?= $row['launch_site'] ?></p>
+	<p><label for="">image : </label></p> <img src="../ressources/img/<?= $row['img'] ?>" alt="<?= $row['name'] ?>">
 
 
 	<h3><a href="edit.php?id=<?= $row['id'] ?>">Modifier</a></h3>

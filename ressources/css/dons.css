@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body {
+  font-family: "Ubuntu Regular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+  background-color: #28252E;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: 1000;
+}
+
+.imgRocket {
+  width: 70px;
+  height: 507px;
+  float: right;
+  padding-right: 25px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.greyLine{
+  width: 50px;
+  height: 2px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #888888;
+}
+
+.description {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.description-title {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.description-subTitle {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.description-text {
+  font-family: "Ubuntu"
+  font-weight: lighter;
+  letter-spacing: 1.4;
+  padding-top: 15px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.description-percent {
+  padding-top: 40px;
+  position: absolute;
+}
+
+.description-percentCircle {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+}
+
+.description-percentTxt {
+  position: absolute;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 55px;
+  font-size: 30px;
+}
+
+.money {
+  margin-left: 40px;
+  margin-top: 220px;
+}
+
+.money-line {
+  height: 100px;
+  width: 1px;
+  background-color: #979797;
+}
+
+.money-euros {
+  width: 300px;
+  height: 42px;
+  padding-left: 20px;
+}
+
+.money-txtLight {
+  font-size: 12px;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-soutenir {
+  text-align: center;
+  background-color: transparent;
+  color: #F9F9F9;
+  border-radius: 10px;
+  width: 134px;
+  height: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  text-align: center;
+  width: 80%;
+  height: 400px;
+}
+
+.modal-colorText {
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  padding-top: 40px;
+}
+
+.modal-btns {
+
+}
+
+.modal-input {
+  margin-top: 50px;
+  height: 40px;
+  width: 150px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #DADADA;
+}
+
+.modal-continue {
+  display: block;
+  margin-top: 100px;
+  margin-left: 70px;
+  border-color: #F4CD4A;
+  border-width: 3px;
+  border-radius: 6px;
+  color: #F4CD4A;
+  font-size: 20px;
+  width: 180px;
+  height: 60px;
+}
+
+.close {
+    color: #F4CD4A;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,117 @@
+@font-face {
+   font-family: "Ubuntu Regular";
+   src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+body{
+  background: #28252E;
+  font-family: "Ubuntu Regular";
+  color: white;
+}
+
+#logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: 1000;
+}
+svg[Attributes Style] {
+    width: 100;
+    height: 100;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+
+.header{
+  position: absolute;
+  z-index: 2;
+  left: 4%;
+}
+
+.header-breadcrumb{
+  margin-top: 100px;
+  margin-left: 120px;
+  word-spacing: 30px;
+  color: #F0C43B;
+}
+
+.header-breadcrumb-link{
+  text-decoration: none;
+  color: #F0C43B;
+}
+
+.don-section{
+  position: relative;
+  top: 200px;
+}
+
+.don-title-container{
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  font-size: 25px;
+}
+
+.whiteLine{
+  background-color: white;
+  height: 2px;
+  width: 50%;
+}
+
+.don-content{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.don-content-text{
+  position: relative;
+  top: 100px;
+}
+
+.don-content-text-title{
+  font-size: 25px;
+}
+
+.don-content-text-paragraph{
+  margin-top: 16px;
+}
+
+.stat-container{
+  margin-left: 20%;
+  width: 700px;
+  margin-top: 100px;
+}
+
+.progression-bar{
+  border: 1px solid white;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+}
+
+.stat-container-paragraph{
+  margin-top: 25px;
+}
+
+.space-before{
+  padding-left: 13px;
+}
+
+.submit-button{
+  border: 1px solid white;
+  padding: 10px 35px 10px 35px;
+  border-radius: 10px;
+  width: max-content;
+  margin-left: 60%;
+  margin-top: 60px;
+}
+
+.don-image{
+  height: 500px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/dons.css">
+  <title>Dons</title>
+</head>
+<body>
+  <header class="header">
+      <div class="header-top">
+          <div class="header-logo">
+            <svg id="logo" viewBox="0 0 160 160" width="100" height="100">
+              <circle cx="80" cy="80" r="45" fill="#FFF"/>
+                <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+                  <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#FFF">
+                <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="3s" repeatCount="indefinite" />
+              </path>
+              </g>
+            </svg>
+          </div>
+          <section class="burgerMenu">
+            <nav id="topMenu" class="menu">
+              <ul class="menu-list">
+                <li class="menu-bold" content="SATELLITES"><a href="../admin">SATELLITES</a></li><br/>
+                <li class="menu-bold" content="ARTICLES"><a href="../#">ARTICLES</a></li><br/>
+                <li class="menu-bold" content="DONS"><a href="../#">DONS</a></li><br />
+                <li class="menu-bold" content="CONNEXION"><a href="../#">CONNEXION</a></li>
+              </ul>
+            </nav>
+            <div id="burgerMenu">
+              <span></span>
+            </div>
+      </div>
+  </header>
+  <h1 class="title">Dons</h1>
+  <div class="greyLine"></div>
+  <img class="imgRocket" src="img/imgRocket.png" alt="Fusée">
+  <section class="description">
+    <h2 class="description-title">SHIPING CLEANING <span class="description-subTitle">Project</span></h2>
+    <p class="description-text">Envoie d’une fusée permettant de<br /> nettoyer notre planète en son<br /> extérieur.</p>
+    <div class="description-percent">
+      <img class="description-percentCircle" src="img/circle.svg">
+      <p class="description-percentTxt">73%</p>
+    </div>
+  </section>
+  <section class="money">
+    <div class="money-line">
+      <p class="money-euros">€ 684,851 <span class="money-txtLight">EUROS</span></p>
+      <p class="money-euros">305,273 donateurs</p>
+      <p class="money-euros">73 % sur €1,000,000 </p>
+    </div>
+  </section>
+  <section class="footer">
+    <button id="btn" class="footer-soutenir">SOUTENIR</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal-colorText">Apportez une contribution</h2>
+        <div class="modal-btns">
+          <input class="modal-input" type="text" value="Montant du don">
+          <button class="modal-continue" type="button" name="CONTINUER">CONTINUER</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="scripts/modal.js"></script>
+  <script type="text/javascript" src="scripts/burgermenu.js"></script>
+</body>
+</html>

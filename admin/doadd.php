@@ -11,12 +11,52 @@ if(isset($_SESSION['logged'])){
 	require_once "../include/connexion.php";
 
 	$request = "INSERT INTO
-`Satelite` 
-(`name`, `launch_date`, `mission_end_date`, `status`, `program`, `agencie`, `orbit`, `altitude`,`inclinaison`, `img`, `description`)
+	`Satelite` 
+	(
+		`name`,
+		`launch_date`,
+		`mission_end_date`,
+		`status`,
+		`program`,
+		`agencie`,
+		`orbit`,
+		`altitude`,
+		`inclinaison`,
+		`img`,
+		`description`,
+		`apoaxis`,
+		`periaxis`,
+		`duration`,
+		`surname`,
+		`launch_site`
+	)
 VALUES 
-(:name, :launch_date, :mission_end_date, :status, :program, :agencie, :orbit, :altitude, :inclinaison, :img, :description) 
-;";
+	(
+		:name, 
+		:launch_date, 
+		:mission_end_date, 
+		:status, 
+		:program, 
+		:agencie, 
+		:orbit, 
+		:altitude, 
+		:inclinaison, 
+		:img, 
+		:description,
+		:apoaxis,
+		:periaxis,
+		:duration,
+		:surname,
+		:launch_site
 
+	) 
+;";
+	if (file_exists($_FILES['img']['name'])) {
+
+	}else{
+	$uploadfile = '../ressources/img/'.$_FILES['img']['name'];
+	move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile);
+	}
 	$stmt = $conn->prepare($request);
 	$stmt->bindValue(':name', htmlentities($_POST['name']));
 	$stmt->bindValue(':launch_date', htmlentities($_POST['launch_date']));
@@ -27,8 +67,13 @@ VALUES
 	$stmt->bindValue(':orbit', htmlentities($_POST['orbit']));
 	$stmt->bindValue(':altitude', htmlentities($_POST['altitude']));
 	$stmt->bindValue(':inclinaison', htmlentities($_POST['inclinaison']));
-	$stmt->bindValue(':img', htmlentities($_POST['img']));
+	$stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
 	$stmt->bindValue(':description', htmlentities($_POST['description']));
+	$stmt->bindValue(':apoaxis', htmlentities($_POST['apoaxis']));
+	$stmt->bindValue(':periaxis', htmlentities($_POST['periaxis']));
+	$stmt->bindValue(':duration', htmlentities($_POST['duration']));
+	$stmt->bindValue(':surname', htmlentities($_POST['surname']));
+	$stmt->bindValue(':launch_site', htmlentities($_POST['launch_site']));
 	$stmt->execute();
 	/* Back to index page */
 	header('Location: admin.php');

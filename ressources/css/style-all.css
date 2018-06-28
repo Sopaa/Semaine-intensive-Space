@@ -18,6 +18,7 @@ body{
     width: 100;
     height: 100;
 }*/
+
 user agent stylesheet
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
     overflow: hidden;
@@ -71,7 +72,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 }
 
 .one-greyLine{
-  background-color: #28252E
+  background-color: #28252E;
   height: 1px;
   width: 121px;
 }
@@ -86,4 +87,9 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
   bottom: 120px;
   left: 230px;
   z-index: 3;
+}
+
+.all_more {
+ color: #FFFFFF;
+  text-decoration: none;
 }

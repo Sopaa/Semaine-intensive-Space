@@ -6,8 +6,26 @@
  * Time: 13:51
  */
 require_once "../include/connexion.php";
-?>
 
+$request = 'SELECT
+`id`,
+`name`,
+`launch_date`,
+`mission_end_date`,
+`status`,
+`program`,
+`agencie`,
+`orbit`,
+`altitude`,
+`inclinaison`,
+`img`,
+`description`
+FROM
+  `Satelite`
+;';
+$stmt    = $conn->prepare( $request );
+$stmt->execute();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,16 +47,21 @@ require_once "../include/connexion.php";
 							</svg>
             </div>
         </div>
-        <div class="header-breadcrumb"><a href="#" class="header-breadcrumb-link">Accueil</a> > <a href="#" class="header-breadcrumb-link">Satellites</a>  >  <a href="#" class="header-breadcrumb-link">Tous les satellites</a>
+        <div class="header-breadcrumb"><a href="index.php" class="header-breadcrumb-link">Accueil</a> >  <a href="#" class="header-breadcrumb-link">Tous les satellites</a>
     </header>
 
     <div class="all">
+	    <?php
+	    while ( false !== $row = $stmt->fetch( PDO::FETCH_ASSOC ) ): ?>
     	<div class="one">
-    		<img src="img/ikonos.png" class="one-image">
+    		<img src="img/<?=$row['img']?>" class="one-image">
     		<div class="one-title">
-    			<p>IKONOS</p>
+    			<p><?=$row['name']?></p>
     			<div class="one-greyLine"></div>
     		</div>
-    		<div class="one-learn-more">En savoir plus</div>
+    		<div class="one-learn-more"><a class="all_more" href="single.php?id=<?=$row['id']?>">En savoir plus</a></div>
     	</div>
+	    <?php endwhile;
+
+	    ?>
     </div>

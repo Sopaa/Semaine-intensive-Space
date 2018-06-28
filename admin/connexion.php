@@ -12,8 +12,8 @@ require_once "../include/connexion.php";
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/connexion.css">
+	<link rel="stylesheet" type="text/css" href="../ressources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../ressources/css/connexion.css">
 </head>
 <body>
 	<header class="header">
